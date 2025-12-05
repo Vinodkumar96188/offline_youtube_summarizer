@@ -168,7 +168,7 @@ You can also run a simple web interface.
   - Simple API (`model.transcribe()`)
 - **Why \"tiny\"?**
   - Much faster and lighter than larger variants
-  - Good trade-off between speed and accuracy for this assignment
+  - Good trade-off between speed and accuracy
   - For higher accuracy, the model name can be changed to `base` or `small` with no code structure changes.
 
 ### 5.2. Summarization: DistilBART CNN

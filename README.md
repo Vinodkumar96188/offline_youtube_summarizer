@@ -130,7 +130,7 @@ If you also want to see the **full transcript**, you can open `app.py` and uncom
 
 ### 4.2. Flask web mode (bonus)
 
-You can also run a simple web interface (for bonus points in the assignment).
+You can also run a simple web interface.
 
 1. Set an environment variable to switch to Flask mode:
 

@@ -4,7 +4,7 @@ A small end-to-end offline system that takes a YouTube URL, downloads the audio,
 
 ## 1. Project Overview
 
-This project implements an **Offline YouTube Video Summarizer** for the AI Engineer assignment.
+This project implements an **Offline YouTube Video Summarizer**
 
 Given a public YouTube URL, the system:
 
@@ -196,50 +196,7 @@ You can also run a simple web interface (for bonus points in the assignment).
 - **Offline requirement**
   - After running `scripts/download_models.py` once and downloading models, STT and summarization do not require the internet.
 
----
-
-## 7. How This Meets the Assignment Criteria
-
-- **Functionality**  
-  - Downloads YouTube audio, transcribes offline, and summarizes offline.
-
-- **Model Selection and Justification**  
-  - Whisper for STT (offline, robust).  
-  - DistilBART CNN for summarization (offline, abstractive).  
-  - Explained trade-offs between speed vs. accuracy and model size.
-
-- **Code Quality**  
-  - Clean separation into modules: `downloader.py`, `stt.py`, `summarizer.py`, `app.py`.  
-  - Functions are short, well-named, and commented.
-
-- **System Design**  
-  - Clear pipeline: URL → audio → transcript → summary.  
-  - Models and logic are modular and easily replaceable.
-
-- **Documentation**  
-  - This README explains setup, usage, design decisions, and robustness.
-
-- **Robustness**  
-  - Handles long videos via chunking.  
-  - Has basic error handling around the main pipeline.
-
----
-
-## 8. Optional Extensions (Future Work / Bonus Ideas)
-
-- **Speaker Diarization**  
-  - Use an offline diarization tool (e.g., pyannote.audio) to mark speaker changes in the transcript and reflect them in the summary.
-
-- **Containerization (Docker)**  
-  - Add a `Dockerfile` to build and run the project in a reproducible environment.
-
-- **Performance Optimization**  
-  - Benchmark Whisper `tiny` vs `base` vs `small` on CPU/GPU.  
-  - Consider quantization or smaller summarization models for weaker hardware.
-
----
-
-## 9. Author
+## 7. Author
 
 **VINOD KUMAR ANCHA**  
-Offline YouTube Video Summarizer – AI Engineer Assignment Implementation.
+Offline YouTube Video Summarizer
